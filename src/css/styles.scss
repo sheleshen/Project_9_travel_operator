@@ -15,9 +15,9 @@ $main-sand3: #b57c55;
 $main-sand4: #b57954;
 
 $main-grey-sand: #c3b7b3;
-$main-grey-sand: #bfa69b;
-$main-grey-sand: #bc9684;
-$main-grey-sand: #b8856c;
+$main-grey-sand2: #bfa69b;
+$main-grey-sand3: #bc9684;
+$main-grey-sand4: #b8856c;
 
 $main-contrast-blue: #497eaa;
 $main-contrast-blue2: #4b8bab;
@@ -69,6 +69,7 @@ $gap16: 16px;
 $gap20: 24px;
 $gap24: 24px;
 $gap32: 32px;
+$gap40: 40px;
 
 // BTN
 // Primary
@@ -116,13 +117,19 @@ h6 {
 
 a {
     text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $text-white;
 }
 
 p {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 140%;
+    line-height: 130%;
     color: $text-black;
     font-family: 'Nunito', sans-serif;
 
@@ -267,44 +274,34 @@ p {
 
 // ЗАГОЛОВКИ
 h1 {
-    // font-size: 100px;
-
+    font-size: 100px;
     font-style: normal;
     font-weight: 300;
     line-height: 110%; /* 110px */
     text-transform: uppercase;
-    // color: $text-white;
+    color: $text-white;
 
-    // удалить, остальное раскомментить
-    font-size: 70px;
-    color: $text-black;
-
-    @media (max-width: 350px) {
-        font-size: 20px;
-        text-align: center;
+    @media (max-width: 200px) {
+            font-size: 24px;
+            text-align: center;
     }
-
-    @media (min-width: 330px) and (max-width: 400px) {
-        font-size: 24px;
-        text-align: center;
-        // font-size: 70px;
+    
+    @media (min-width: 200px) and (max-width: 320px) {
+            font-size: 30px;
+            text-align: center;
     }
-
-    @media (min-width: 400px) and (max-width: 600px) {
-        font-size: 30px;
-        text-align: center;
-        // font-size: 70px;
+    
+    @media (min-width: 320px) and (max-width: 600px) {
+            font-size: 40px;
+            text-align: center;
     }
-
+    
     @media (min-width: 600px) and (max-width: 768px) {
-        text-align: center;
-        font-size: 46px;
-        // font-size: 80px;
+            font-size: 60px;
     }
-
+    
     @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 56px;
-        // font-size: 90px;
+            font-size: 80px;
     }
 }
 
@@ -445,16 +442,82 @@ img {
 
 // СЛАЙЛЕР
 
-/* слайдер */
+header {
+    overflow: hidden;
+}
+
+.position-rel {
+    position: relative;
+}
 
 .images-slider {
-    background-image: url(..//images/header-image.jpg);
+    background-image: url(..//images/header-img2.jpg);
     background-position: top;
+    background-size: cover;
 }
+
+// .images-slider-background {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-color: #0000004d;
+// }
 
 .title-slider {
     padding-top: 131px;
     padding-bottom: 34px;
+}
+
+.menu-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gap40;
+    padding-top: 40px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: $gap40;
+}
+
+.types-tours-list {
+    display: flex;
+    flex-direction: row;
+    gap: $gap12;
+
+    padding-bottom: 200px;    
+}
+
+.types-tours-item {
+    padding: 9px 15px 7px 15px;
+    font-family: Montserrat;
+    color: $text-white;
+    border-radius: 5px;
+}
+
+.main-grey-sand {
+    background-color: $main-grey-sand;
+}
+
+.main-contrast-grey-blue {
+    background-color: $main-contrast-grey-blue;
+}
+
+.main-contrast-blue2 {
+    background-color: $main-contrast-blue2;
+}
+
+.main-contrast-brown4 {
+    background-color: $main-contrast-brown4;
+}
+
+.slider-line {
+    position: absolute;
+    top: 688px;
+    right: -120px;
 }
 
 
