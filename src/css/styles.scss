@@ -275,10 +275,7 @@ p {
 // ЗАГОЛОВКИ
 h1 {
     font-size: 100px;
-    font-style: normal;
-    font-weight: 300;
     line-height: 110%; /* 110px */
-    text-transform: uppercase;
     color: $text-white;
 
     @media (max-width: 200px) {
@@ -306,15 +303,12 @@ h1 {
 }
 
 h2 {
-    font-style: normal;
-    font-weight: 700;
     font-size: 50px;
     line-height: 120%;
     color: $text-black;
-    text-align: center;
 
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
 
     @media (max-width: 200px) {
             font-size: 20px;
@@ -460,6 +454,17 @@ h2 {
 
 .main-contrast-brown4 {
     background-color: $main-contrast-brown4;
+}
+
+// О нас
+.img-about {
+    background-image: url(/src/images/about-us.jpg);
+    background-position: left 50vw top;
+}
+
+// Туры
+.map-kamchatka {
+    z-index: -1;
 }
 
 

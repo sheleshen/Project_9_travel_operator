@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="max-w-7xl m-auto">
-                    <h1 class="pt-32 pb-9">
+                    <h1 class="pt-32 pb-9 uppercase font-light not-italic">
                         Пришло<br> время<br> исследовать<br> мир
                     </h1>
                     <div class="flex pb-52 gap-3">
@@ -93,84 +93,63 @@
 
         <main>
             <!-- О нас -->
-            <section class="max-w-7xl m-auto">
-                <h2>
-                    Сделайте свое путешествие особенным
-                </h2>
-                <p>
-                    Полуостров Камчатка окружен морями Тихого океана — Беринговым и Охотским, а сам Камчатский край охватывает материковую часть, Командорские и Карагинский острова. Красоты этих мест, каких не встретишь больше нигде в мире, поражают воображение.
-                </p>
-                <button class="btn normal">
-                    Выбрать тур
-                </button>
+            <section class="img-about bg-no-repeat bg-cover">
+                <div class="max-w-7xl m-auto pb-20">
+                    <div class="w-1/2">
+                        <h2 class="font-normal not-italic">
+                            Сделайте свое путешествие особенным
+                        </h2>
+                        <p class="pb-6">
+                            Полуостров Камчатка окружен морями Тихого океана — Беринговым и Охотским, а сам Камчатский край охватывает материковую часть, Командорские и Карагинский острова. Красоты этих мест, каких не встретишь больше нигде в мире, поражают воображение.
+                        </p>
+                        <button class="btn normal">
+                            Выбрать тур
+                        </button>
+                    </div>
+                </div>
             </section>
 
             <!-- Туры -->
-            <section class="max-w-7xl m-auto">
-                <h2>
-                    Популярные маршруты
-                </h2>
-                <div class="flex">
-                    <p id="easy-tour">
-                        Легко
-                    </p>
-                    <p id="hard-tour">
-                        Сложно
-                    </p>
-                    <p id="auto-tour">
-                        Автотур
-                    </p>
-                    <p id="with-tent-tour">
-                        С палатками
-                    </p>
-                    <p id="without-tent-tour">
-                        Без палаток
-                    </p>
-                    <p id="foot-tour">
-                        Пешие
-                    </p>
-                    <p id="summer-tour">
-                        Летние
-                    </p>
-                </div>
-                <!-- Карточки -->
-                <div>
-                    <img src="/src/images/mariya-tereshkova-9yuEXV_xGKY-unsplash.jpg" alt="">
-                    <div>
-                        <div>
-                            <p>
-                                <a href="#">
-                                    Вулканы Камчатки. Активный тур без рюкзаков
-                                </a>
-                            </p>
-                            <a href="">
-                                <p>
-                                    Текст карточки
-                                </p>
-                                <p>
-                                    Описание тура. Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. С другой стороны дальнейшее развитие различных форм деятельности требуют от нас анализа направлений прогрессивного развития. Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет оценить значение направлений прогрессивного развития. 
-                                </p>
-                            </a>
-                        </div>
-                        <div>
-                            <span>
-                                7 км
-                            </span>
-                            <span aria-hidden="true">
-                                &middot;
-                            </span>
-                            <span>
-                                14 дней
-                            </span>
-                        </div>
+            <section class="max-w-7xl m-auto relative">
+                <div class="z-10">
+                    <h2 class="font-normal not-italic text-left pb-6">
+                        Популярные маршруты
+                    </h2>
+                    <div class="flex gap-1 pb-16">
+                        <p id="easy-tour" class="px-4 py-2 border-solid">
+                            Легко
+                        </p>
+                        <p id="hard-tour" class="px-4 py-2 border-solid">
+                            Сложно
+                        </p>
+                        <p id="auto-tour" class="px-4 py-2 border-solid">
+                            Автотур
+                        </p>
+                        <p id="with-tent-tour" class="px-4 py-2 border-solid">
+                            С палатками
+                        </p>
+                        <p id="without-tent-tour" class="px-4 py-2 border-solid">
+                            Без палаток
+                        </p>
+                        <p id="foot-tour" class="px-4 py-2 border-solid">
+                            Пешие
+                        </p>
+                        <p id="summer-tour" class="px-4 py-2 border-solid">
+                            Летние
+                        </p>
+                    </div>
+                    <!-- Карточки -->
+                    <div class="bg-white w-1/3 shadow-lg">
+                        
                     </div>
                 </div>
+                <img class="map-kamchatka absolute top-0 left-0 opacity-20" src="/src/images/map-of-russian-kamchatka.jpg" alt="карта Камчатки">
             </section>
             
 
             <!-- Отзывы -->
             <!-- <section class="review-section max-w-7xl m-auto">
-                <h2>Отзывы наших путешественников</h2>
+                <h2 class="font-normal not-italic text-left pb-6">Отзывы наших путешественников</h2>
                 <div class="review">
                     <img
                         class="image-review position-image-review"
