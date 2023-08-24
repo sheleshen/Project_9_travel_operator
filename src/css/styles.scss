@@ -224,7 +224,7 @@ p {
 
 .normal {
     font-size: 20px;
-    padding: 16px 28px 16px 28px;
+    padding: 17px 28px 16px 28px;
 
     @media (max-width: 600px) {
         font-size: 14px;
@@ -347,42 +347,37 @@ h2 {
 }
 
 // CONTAINER
-.container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+// .container {
+//     max-width: 1200px;
+//     margin-left: auto;
+//     margin-right: auto;
 
-    @media (max-width: 600px) {
-        max-width: calc(100% - 40px);
-    }
+//     @media (max-width: 600px) {
+//         max-width: calc(100% - 40px);
+//     }
 
-    @media (min-width: 600px) and (max-width: 768px) {
-        max-width: calc(100% - 40px);
-    }
+//     @media (min-width: 600px) and (max-width: 768px) {
+//         max-width: calc(100% - 40px);
+//     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        max-width: calc(100% - 40px);
-    }
+//     @media (min-width: 768px) and (max-width: 1024px) {
+//         max-width: calc(100% - 40px);
+//     }
 
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        max-width: calc(100% - 20px);
-    }
-}
-
+//     @media (min-width: 1024px) and (max-width: 1280px) {
+//         max-width: calc(100% - 20px);
+//     }
+// }
 
 
 // ДРУГИЕ СВОЙСТВА
-.cntr-alignment {
-    margin: 0px auto;
-    display: block;
+
+.font-montserrat {
+    font-family: Montserrat;
 }
 
-// .right-alignment {
-//     margin-right: 0;
-//     display: block
-// }
-
-img {
+.cntr-alignment {
+    margin: 0px auto;
     display: block;
 }
 
@@ -442,60 +437,13 @@ img {
 
 // СЛАЙЛЕР
 
-header {
-    overflow: hidden;
-}
-
-.position-rel {
-    position: relative;
-}
-
 .images-slider {
     background-image: url(..//images/header-img2.jpg);
-    background-position: top;
-    background-size: cover;
 }
 
-// .images-slider-background {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     background-color: #0000004d;
-// }
-
-.title-slider {
-    padding-top: 131px;
-    padding-bottom: 34px;
-}
-
-.menu-desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: $gap40;
-    padding-top: 40px;
-}
-
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    gap: $gap40;
-}
-
-.types-tours-list {
-    display: flex;
-    flex-direction: row;
-    gap: $gap12;
-
-    padding-bottom: 200px;    
-}
-
-.types-tours-item {
-    padding: 9px 15px 7px 15px;
-    font-family: Montserrat;
-    color: $text-white;
-    border-radius: 5px;
+.slider-line {
+    top: 688px;
+    right: -120px;
 }
 
 .main-grey-sand {
@@ -512,12 +460,6 @@ header {
 
 .main-contrast-brown4 {
     background-color: $main-contrast-brown4;
-}
-
-.slider-line {
-    position: absolute;
-    top: 688px;
-    right: -120px;
 }
 
 

@@ -7,10 +7,12 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
         <!-- Обнуляем стили браузера -->
-        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
 
         <!-- Подключаем стили -->
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/styles.scss" />
+        
 
         <!-- Шрифт Montserrat для заголовков -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,49 +41,49 @@
 
     <body>
         <!-- слайдер -->
-        <header class="position-rel">
+        <header class="relative overflow-hidden">
             <!-- <div class="images-slider-background"></div> -->
-            <img class="slider-line" src="../src/images/slider-line.png" alt="Пунктирная линия">
-            <section class="images-slider">
-                <div class="menu-desktop container">
-                    <div class="logo-decstop">
+            <img class="slider-line block absolute" src="../src/images/slider-line.png" alt="Пунктирная линия">
+            <section class="images-slider bg-top bg-cover">
+                <div class="max-w-7xl m-auto pt-10 flex items-center justify-between">
+                    <div>
                         <img src="./logo/logo.png" alt="logo">
                     </div>
-                    <div class="nav-list">
-                        <p class="nav-item">
+                    <div class="flex gap-10">
+                        <p>
                             <a href="">
                                 Маршруты
                             </a>
                         </p>
-                        <p class="nav-item">
+                        <p>
                             <a href="">О нас</a>
                         </p>
-                        <p class="nav-item">
+                        <p>
                             <a href="">Отзывы</a>
                         </p>
-                        <p class="nav-item">
+                        <p>
                             <a href="">Статьи</a>
                         </p>
-                        <p class="nav-item">
+                        <p>
                             <a href="">Контакты</a>
                         </p>
                     </div>
                 </div>
-                <div class="container content-slider">
-                    <h1 class="title-slider">
+                <div class="max-w-7xl m-auto">
+                    <h1 class="pt-32 pb-9">
                         Пришло<br> время<br> исследовать<br> мир
                     </h1>
-                    <div class="types-tours-list">
-                        <p class="types-tours-item main-grey-sand">
+                    <div class="flex pb-52 gap-3">
+                        <p class="font-montserrat main-grey-sand rounded-md px-4 py-2 text-white">
                             Индивидуальные
                         </p>
-                        <p class="types-tours-item main-contrast-grey-blue">
+                        <p class="font-montserrat main-contrast-grey-blue rounded-md px-4 py-2 text-white">
                             Групповые
                         </p>
-                        <p class="types-tours-item main-contrast-blue2">
+                        <p class="font-montserrat main-contrast-blue2 rounded-md px-4 py-2 text-white">
                             Пешие
                         </p>
-                        <p class="types-tours-item main-contrast-brown4">
+                        <p class="font-montserrat main-contrast-brown4 rounded-md px-4 py-2 text-white">
                             Автотуры
                         </p>
                     </div>
@@ -91,11 +93,83 @@
 
         <main>
             <!-- О нас -->
+            <section class="max-w-7xl m-auto">
+                <h2>
+                    Сделайте свое путешествие особенным
+                </h2>
+                <p>
+                    Полуостров Камчатка окружен морями Тихого океана — Беринговым и Охотским, а сам Камчатский край охватывает материковую часть, Командорские и Карагинский острова. Красоты этих мест, каких не встретишь больше нигде в мире, поражают воображение.
+                </p>
+                <button class="btn normal">
+                    Выбрать тур
+                </button>
+            </section>
 
             <!-- Туры -->
+            <section class="max-w-7xl m-auto">
+                <h2>
+                    Популярные маршруты
+                </h2>
+                <div class="flex">
+                    <p id="easy-tour">
+                        Легко
+                    </p>
+                    <p id="hard-tour">
+                        Сложно
+                    </p>
+                    <p id="auto-tour">
+                        Автотур
+                    </p>
+                    <p id="with-tent-tour">
+                        С палатками
+                    </p>
+                    <p id="without-tent-tour">
+                        Без палаток
+                    </p>
+                    <p id="foot-tour">
+                        Пешие
+                    </p>
+                    <p id="summer-tour">
+                        Летние
+                    </p>
+                </div>
+                <!-- Карточки -->
+                <div>
+                    <img src="/src/images/mariya-tereshkova-9yuEXV_xGKY-unsplash.jpg" alt="">
+                    <div>
+                        <div>
+                            <p>
+                                <a href="#">
+                                    Вулканы Камчатки. Активный тур без рюкзаков
+                                </a>
+                            </p>
+                            <a href="">
+                                <p>
+                                    Текст карточки
+                                </p>
+                                <p>
+                                    Описание тура. Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. С другой стороны дальнейшее развитие различных форм деятельности требуют от нас анализа направлений прогрессивного развития. Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет оценить значение направлений прогрессивного развития. 
+                                </p>
+                            </a>
+                        </div>
+                        <div>
+                            <span>
+                                7 км
+                            </span>
+                            <span aria-hidden="true">
+                                &middot;
+                            </span>
+                            <span>
+                                14 дней
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
 
             <!-- Отзывы -->
-            <!-- <section class="review-section container">
+            <!-- <section class="review-section max-w-7xl m-auto">
                 <h2>Отзывы наших путешественников</h2>
                 <div class="review">
                     <img
