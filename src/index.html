@@ -44,46 +44,44 @@
         <header class="relative overflow-hidden">
             <!-- <div class="images-slider-background"></div> -->
             <img class="slider-line block absolute" src="../src/images/slider-line.png" alt="Пунктирная линия">
-            <section class="images-slider bg-top bg-cover">
-                <div class="max-w-7xl m-auto pt-10 flex items-center justify-between">
+            <section class="px-5 lg:px-3 xl:px-0 images-slider bg-top bg-cover">
+                <div class="max-w-7xl m-auto flex items-center justify-between pt-6 sm:pt-7 md:pt-8 lg:pt-9 xl:pt-10">
                     <div>
-                        <img src="./logo/logo.png" alt="logo">
+                        <img class="w-3/5 lg:w-full md:w-4/5" src="./logo/logo.png" alt="logo">
                     </div>
-                    <div class="flex gap-10">
+                    <div class="hidden md:flex md:gap-8 lg:gap-10">
                         <p>
-                            <a href="">
-                                Маршруты
-                            </a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Маршруты</a>
                         </p>
                         <p>
-                            <a href="">О нас</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">О нас</a>
                         </p>
                         <p>
-                            <a href="">Отзывы</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Отзывы</a>
                         </p>
                         <p>
-                            <a href="">Статьи</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Статьи</a>
                         </p>
                         <p>
-                            <a href="">Контакты</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Контакты</a>
                         </p>
                     </div>
                 </div>
                 <div class="max-w-7xl m-auto">
-                    <h1 class="pt-32 pb-9 uppercase font-light not-italic">
+                    <h1 class="uppercase font-light pt-8 pb-4 sm:pt-10 sm:pb-5 md:pt-14 md:pb-7 lg:pt-20 lg:pb-8 xl:pt-32 xl:pb-9 ">
                         Пришло<br> время<br> исследовать<br> мир
                     </h1>
-                    <div class="flex pb-52 gap-3">
-                        <p class="font-montserrat main-grey-sand rounded-md px-4 py-2 text-white">
+                    <div class="flex flex-wrap gap-2 pb-10 justify-center sm:pb-20 sm:justify-start md:pb-32 lg:pb-40 xl:pb-52 xl:gap-3">
+                        <p class="font-montserrat main-grey-sand btn-type-tour">
                             Индивидуальные
                         </p>
-                        <p class="font-montserrat main-contrast-grey-blue rounded-md px-4 py-2 text-white">
+                        <p class="font-montserrat main-contrast-grey-blue btn-type-tour">
                             Групповые
                         </p>
-                        <p class="font-montserrat main-contrast-blue2 rounded-md px-4 py-2 text-white">
+                        <p class="font-montserrat main-contrast-blue2 btn-type-tour">
                             Пешие
                         </p>
-                        <p class="font-montserrat main-contrast-brown4 rounded-md px-4 py-2 text-white">
+                        <p class="font-montserrat main-contrast-brown4 btn-type-tour">
                             Автотуры
                         </p>
                     </div>
@@ -93,13 +91,29 @@
 
         <main>
             <!-- О нас -->
-            <section class="img-about bg-no-repeat bg-cover">
-                <div class="max-w-7xl m-auto pb-20">
-                    <div class="w-1/2">
-                        <h2 class="font-normal not-italic">
+            <section class="px-5 lg:px-3 xl:px-0 hidden md:flex img-about md:bg-no-repeat md:bg-cover ">
+                <div class="max-w-7xl m-auto pb-8 sm:pb-9 md:pb-10 lg:pb-14 xl:pb-20">
+                    <div class=" md:w-1/2 md:pr-7">
+                        <h2>
                             Сделайте свое путешествие особенным
                         </h2>
-                        <p class="pb-6">
+                        <p class="pb-4 md:pb-6 text-default">
+                            Полуостров Камчатка окружен морями Тихого океана — Беринговым и Охотским, а сам Камчатский край охватывает материковую часть, Командорские и Карагинский острова. Красоты этих мест, каких не встретишь больше нигде в мире, поражают воображение.
+                        </p>
+                        <button class="btn normal">
+                            Выбрать тур
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="px-5 lg:px-3 xl:px-0 md:hidden">
+                <div class="max-w-7xl m-auto pb-8 sm:pb-9 md:pb-10 lg:pb-14 xl:pb-20">
+                    <div class=" md:w-1/2 md:pr-7">
+                        <h2>
+                            Сделайте свое путешествие особенным
+                        </h2>
+                        <p class="pb-4 md:pb-6 text-default">
                             Полуостров Камчатка окружен морями Тихого океана — Беринговым и Охотским, а сам Камчатский край охватывает материковую часть, Командорские и Карагинский острова. Красоты этих мест, каких не встретишь больше нигде в мире, поражают воображение.
                         </p>
                         <button class="btn normal">
@@ -110,42 +124,42 @@
             </section>
 
             <!-- Туры -->
-            <section class="max-w-7xl m-auto relative">
-                <div class="z-10">
-                    <h2 class="font-normal not-italic text-left pb-6">
+            <section class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto relative">
+                <div>
+                    <h2>
                         Популярные маршруты
                     </h2>
-                    <div class="flex gap-2 pb-8">
-                        <p id="easy-tour" class="text-neutral-500 px-4 py-2 border-2 border-solid rounded border-gray-400">
+                    <div class="flex flex-wrap gap-2 pb-8">
+                        <p id="easy-tour" class="btn-tours">
                             Легко
                         </p>
-                        <p id="hard-tour" class="text-neutral-500 px-4 py-2 border-2 border-solid rounded border-gray-400">
+                        <p id="hard-tour" class="btn-tours">
                             Сложно
                         </p>
-                        <p id="auto-tour" class="text-neutral-500 px-4 py-2 border-2 border-solid rounded border-gray-400">
+                        <p id="auto-tour" class="btn-tours">
                             Автотур
                         </p>
-                        <p id="with-tent-tour" class="text-neutral-500 px-4 py-2 border-2 border-solid rounded border-gray-400">
+                        <p id="with-tent-tour" class="btn-tours">
                             С палатками
                         </p>
-                        <p id="without-tent-tour" class="text-neutral-500 px-4 py-2 border-2 border-solid rounded border-gray-400">
+                        <p id="without-tent-tour" class="btn-tours">
                             Без палаток
                         </p>
-                        <p id="foot-tour" class="text-neutral-500 px-4 py-2 border-2 border-solid rounded border-gray-400">
+                        <p id="foot-tour" class="btn-tours">
                             Пешие
                         </p>
-                        <p id="summer-tour" class="text-neutral-500 px-4 py-2 border-2 border-solid rounded border-gray-400">
+                        <p id="summer-tour" class="btn-tours">
                             Летние
                         </p>
                     </div>
                     <!-- Карточки -->
                     <div class="flex flex-col">
-                        <div class="flex justify-between py-10 border-b-2 border-dotted border-orange-300">
-                            <p class="title-tour font-montserrat font-normal w-1/2">
+                        <div class="tour-color-line border-b-2 border-dotted py-6 flex-col md:flex md:flex-row md:justify-between sm:py-7 md:py-8 lg:py-9 xl:py-10">
+                            <p class="title-tour text-lg font-montserrat font-normal w-full pb-3 md:pb-0 md:w-1/2 lg:text-3xl md:text-2xl sm:text-xl">
                                 Вулканы Камчатки. Активный тур без рюкзаков
                             </p>
-                            <div class="flex gap-10 items-center">
-                                <div class="flex flex-col gap-1">
+                            <div class="flex gap-10 items-center justify-between">
+                                <div class="flex flex-col md:gap-1 gap-0">
                                     <p class="info-tour font-normal">
                                         с 29.07 по 11.08.2023
                                     </p>
@@ -158,12 +172,12 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="flex justify-between py-10 border-b-2 border-dotted border-orange-300">
-                            <p class="title-tour font-montserrat font-normal w-1/2">
+                        <div class="tour-color-line border-b-2 border-dotted py-6 flex-col md:flex md:flex-row md:justify-between sm:py-7 md:py-8 lg:py-9 xl:py-10">
+                            <p class="title-tour text-lg font-montserrat font-normal w-full pb-3 md:pb-0 md:w-1/2 lg:text-3xl md:text-2xl sm:text-xl">
                                 Камчатка: Толбачинское кольцо. Поход к спящему вулкану
                             </p>
-                            <div class="flex gap-10 items-center">
-                                <div class="flex flex-col gap-1">
+                            <div class="flex gap-10 items-center justify-between">
+                                <div class="flex flex-col md:gap-1 gap-0">
                                     <p class="info-tour font-normal">
                                         с 29.07 по 11.08.2023
                                     </p>
@@ -176,16 +190,16 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="flex justify-between py-10 border-b-2 border-dotted border-orange-300">
-                            <p class="title-tour font-montserrat font-normal w-1/2">
+                        <div class="tour-color-line border-b-2 border-dotted py-6 flex-col md:flex md:flex-row md:justify-between sm:py-7 md:py-8 lg:py-9 xl:py-10">
+                            <p class="title-tour text-lg font-montserrat font-normal w-full pb-3 md:pb-0 md:w-1/2 lg:text-3xl md:text-2xl sm:text-xl">
                                 Знакомство с Камчаткой за 5 дней
                             </p>
-                            <div class="flex gap-10 items-center">
-                                <div class="flex flex-col gap-1">
-                                    <p class="info-tour font-normal">
+                            <div class="flex gap-10 items-center justify-between">
+                                <div class="flex flex-col md:gap-1 gap-0">
+                                    <p class="info-tour text-base font-normal">
                                         с 29.07 по 11.08.2023
                                     </p>
-                                    <p class="info-tour font-normal">
+                                    <p class="info-tour text-base font-normal">
                                         2 места
                                     </p>
                                 </div>
@@ -194,17 +208,17 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="flex justify-between py-10 border-b-2 border-dotted border-orange-300">
-                            <p class="title-tour font-montserrat font-normal w-1/2">
+                        <div class="tour-color-line border-b-2 border-dotted py-6 flex-col md:flex md:flex-row md:justify-between sm:py-7 md:py-8 lg:py-9 xl:py-10">
+                            <p class="title-tour text-lg font-montserrat font-normal w-full pb-3 md:pb-0 md:w-1/2 lg:text-3xl md:text-2xl sm:text-xl">
                                 Поход по Камчатке «Тихоокеанское кольцо»
                             </p>
-                            <div class="flex gap-10 items-center">
-                                <div class="flex flex-col gap-1">
-                                    <p class="info-tour font-normal">
+                            <div class="flex gap-10 items-center justify-between">
+                                <div class="flex flex-col md:gap-1 gap-0">
+                                    <p class="info-tour text-base font-normal">
                                         с 29.07 по 11.08.2023
                                     </p>
-                                    <p class="info-tour font-normal">
-                                        1 место
+                                    <p class="info-tour text-base font-normal text-red-500">
+                                        мест нет
                                     </p>
                                 </div>
                                 <button class="btn normal">
