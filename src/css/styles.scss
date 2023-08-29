@@ -38,11 +38,12 @@ $main-contrast-brown5: #9c9d92;
 
 // BG
 $bg-white: #ffffff;
-$bg-light: #f8f4f0;
-$bg-light2: #f2e8e0;
-$bg-light3: #ebddd1;
-$bg-light4: #e4d1c1;
-$bg-light5: #dec6b2;
+$bg-light: #F8F4F0;
+$bg-light2: #f8f4f0;
+$bg-light3: #f2e8e0;
+$bg-light4: #ebddd1;
+$bg-light5: #e4d1c1;
+$bg-light6: #dec6b2;
 
 // STROKE
 $str-grey: #f2f2f2;
@@ -79,13 +80,13 @@ $btn-pr-bgcl: #b3663f;
 $btn-pr-tcl: #ffffff;
 
 // Secondary
-$btn-sec-bg: #928b87;
-$btn-sec-t: #ffffff;
+$btn-sec-bg: #ffffff;
+$btn-sec-t: #b3663f;
 
-$btn-sec-bgh: #716b68;
+$btn-sec-bgh: #b47454;
 $btn-sec-th: #ffffff;
 
-$btn-sec-bgcl: #928b87;
+$btn-sec-bgcl: #b3663f;
 $btn-sec-tcl: #ffffff;
 
 $btn-sec-bgdes: #928b8700;
@@ -121,6 +122,11 @@ p,
     @apply font-normal text-sm text-black md:text-base xl:text-lg;
 }
 
+.text-quess {
+    @apply font-normal text-sm text-black md:text-base xl:text-base;
+    color: $form-text-lead-in;
+}
+
 // BTN КНОПКИ
 .btn-tours {
     @apply border border-solid rounded px-3 pb-1 pt-1.5 lg:px-3.5 lg:pb-1.5 lg:pt-2 xl:px-4 xl:pb-2 xl:pt-2.5;
@@ -133,20 +139,21 @@ p,
     @apply rounded-md text-xs px-2 pt-1.5 pb-1 sm:text-sm md:px-4 md:pt-2 md:pb-1.5 md:text-base text-white;
 }
 
+.btn-primary {
+    @apply border-none rounded font-normal text-center cursor-pointer text-sm py-3 px-5 sm:py-3.5 sm:px-5 md:text-base md:px-6 md:py-4 lg:text-xl lg:px-7 lg:py-4;
+}
+
+.btn-secondary {
+    @apply border-none rounded font-normal text-center cursor-pointer text-sm py-3 px-5 sm:py-4 sm:px-6 md:text-base md:px-7 md:py-4 lg:text-xl lg:px-7 lg:py-4;
+}
+
+.btn-icon {
+    @apply rounded font-normal text-center cursor-pointer py-2.5 px-2.5 sm:py-3 sm:px-3 md:px-4 md:py-4 lg:px-4 lg:py-4;
+}
+
 .btn {
     background-color: $btn-pr-bg;
-    border: none;
-    border-radius: 4px;
     color: $btn-pr-t;
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 120%;
-
-    text-align: center;
-    cursor: pointer;
-
-
 
     &:hover {
         background-color: $btn-pr-bgh;
@@ -162,104 +169,22 @@ p,
 
 .btn-sec {
     background-color: $btn-sec-bg;
-    border: none;
-    border-radius: 4px;
     color: $btn-sec-t;
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 120%;
-
-    text-align: center;
-    cursor: pointer;
+    border: 1px solid $btn-sec-t;
 
     &:hover {
         background-color: $btn-sec-bgh;
         color: $btn-sec-th;
         transition: all 300ms linear;
+        border: 1px solid $btn-sec-bgh;
     }
 
     &:active {
         background-color: $btn-sec-bgcl;
         color: $btn-pr-tcl;
         transition: all 200ms linear;
+        border: 1px solid $btn-sec-bgcl;
     }
-}
-
-// РАЗМЕРЫ КНОПОК - normal по умолчанию
-.large {
-    font-size: 20px;
-    padding: 20px 32px 20px 32px;
-
-    @media (max-width: 600px) {
-        font-size: 14px;
-        padding: 13px 20px 11px 20px;
-    }
-
-    @media (min-width: 600px) and (max-width: 768px) {
-        font-size: 14px;
-        padding: 13px 22px 15px 22px;
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 16px;
-        padding: 16px 26px 16px 26px;
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 20px;
-        padding: 16px 28px 16px 28px;
-    }
-}
-
-.normal {
-    font-size: 20px;
-    padding: 17px 28px 16px 28px;
-
-    @media (max-width: 600px) {
-        font-size: 14px;
-        padding: 13px 20px 11px 20px;
-    }
-
-    @media (min-width: 600px) and (max-width: 768px) {
-        font-size: 14px;
-        padding: 13px 22px 15px 22px;
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 16px;
-        padding: 16px 26px 16px 26px;
-    }
-}
-
-.medium {
-    font-size: 16px;
-    padding: 16px 26px 16px 26px;
-
-    @media (max-width: 600px) {
-        font-size: 14px;
-        padding: 13px 20px 11px 20px;
-    }
-
-    @media (min-width: 600px) and (max-width: 768px) {
-        font-size: 14px;
-        padding: 13px 22px 15px 22px;
-    }
-}
-
-.small {
-    font-size: 14px;
-    padding: 13px 22px 15px 22px;
-
-    @media (max-width: 600px) {
-        font-size: 14px;
-        padding: 13px 20px 11px 20px;
-    }
-}
-
-.extrasmall {
-    font-size: 14px;
-    padding: 13px 20px 11px 20px;
 }
 
 // ЗАГОЛОВКИ
@@ -296,90 +221,6 @@ h2 {
     color: $text-black;
     @apply font-normal not-italic text-left pb-6 text-xl pt-8 sm:text-2xl sm:pt-9 md:text-3xl md:pt-10 lg:text-4xl lg:pt-14 xl:text-5xl xl:pt-20;
 }
-
-// CONTAINER
-// .container {
-//     max-width: 1200px;
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     @media (max-width: 600px) {
-//         max-width: calc(100% - 40px);
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         max-width: calc(100% - 40px);
-//     }
-
-//     @media (min-width: 768px) and (max-width: 1024px) {
-//         max-width: calc(100% - 40px);
-//     }
-
-//     @media (min-width: 1024px) and (max-width: 1280px) {
-//         max-width: calc(100% - 20px);
-//     }
-// }
-
-
-// ДРУГИЕ СВОЙСТВА
-
-.font-montserrat {
-    font-family: Montserrat;
-}
-
-// .flex-line {
-//     display: flex;
-//     flex-direction: row;
-// }
-
-// .flex-column {
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .cntr-object {
-//     align-items: center;
-// }
-
-// .indent-right20 {
-//     margin-right: 20px;
-
-//     @media (max-width: 600px) {
-//         margin-right: 14px;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         margin-right: 18px;
-//     }
-// }
-
-// .indent-left20 {
-//     margin-left: 20px;
-
-//     @media (max-width: 600px) {
-//         margin-left: 14px;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         margin-left: 18px;
-//     }
-// }
-
-// .indent-bot20 {
-//     margin-bottom: 60px;
-
-//     @media (max-width: 600px) {
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//     }
-
-//     @media (min-width: 768px) and (max-width: 1024px) {
-//     }
-
-//     @media (min-width: 1024px) and (max-width: 1280px) {
-//     }
-// }
 
 // СЛАЙЛЕР
 
@@ -445,6 +286,76 @@ h2 {
 .tour-color-line{
     border-color: $main-sand2;
 }
+
+// Ответы на частые вопросы
+.quess-item {
+    background-color: $bg-light;
+}
+
+.icon-quess {
+    color: $main-sand;
+}
+
+
+// ДРУГИЕ СВОЙСТВА
+
+.font-montserrat {
+    font-family: Montserrat;
+}
+
+// .flex-line {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .flex-column {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .cntr-object {
+//     align-items: center;
+// }
+
+// .indent-right20 {
+//     margin-right: 20px;
+
+//     @media (max-width: 600px) {
+//         margin-right: 14px;
+//     }
+
+//     @media (min-width: 600px) and (max-width: 768px) {
+//         margin-right: 18px;
+//     }
+// }
+
+// .indent-left20 {
+//     margin-left: 20px;
+
+//     @media (max-width: 600px) {
+//         margin-left: 14px;
+//     }
+
+//     @media (min-width: 600px) and (max-width: 768px) {
+//         margin-left: 18px;
+//     }
+// }
+
+// .indent-bot20 {
+//     margin-bottom: 60px;
+
+//     @media (max-width: 600px) {
+//     }
+
+//     @media (min-width: 600px) and (max-width: 768px) {
+//     }
+
+//     @media (min-width: 768px) and (max-width: 1024px) {
+//     }
+
+//     @media (min-width: 1024px) and (max-width: 1280px) {
+//     }
+// }
 
 
 // Отзывы
