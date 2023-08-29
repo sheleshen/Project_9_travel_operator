@@ -222,6 +222,12 @@ h2 {
     @apply font-normal not-italic text-left pb-6 text-xl pt-8 sm:text-2xl sm:pt-9 md:text-3xl md:pt-10 lg:text-4xl lg:pt-14 xl:text-5xl xl:pt-20;
 }
 
+// ДРУГИЕ СВОЙСТВА
+
+.font-montserrat {
+    font-family: Montserrat;
+}
+
 // СЛАЙЛЕР
 
 .images-slider {
@@ -296,261 +302,63 @@ h2 {
     color: $main-sand;
 }
 
+// Отзывы
+.image-review {
+    border-radius: 60px;
+    z-index: -1;
 
-// ДРУГИЕ СВОЙСТВА
+    @media (max-width: 600px) {
+        display: none;
+    }
 
-.font-montserrat {
-    font-family: Montserrat;
+    @media (min-width: 600px) and (max-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width: 600px) and (max-width: 930px) {
+        width: 100%;
+    }
 }
 
-// .flex-line {
-//     display: flex;
-//     flex-direction: row;
-// }
+.review-list {
+    width: 600px;
+    left: 0;
+    transition: all ease 1s;
 
-// .flex-column {
-//     display: flex;
-//     flex-direction: column;
-// }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 
-// .cntr-object {
-//     align-items: center;
-// }
+    @media (min-width: 600px) and (max-width: 768px) {
+        width: 100%;
+    }
+}
 
-// .indent-right20 {
-//     margin-right: 20px;
+.review-item {
+    background: $bg-light;
 
-//     @media (max-width: 600px) {
-//         margin-right: 14px;
-//     }
+    @media (max-width: 600px) {
+        box-shadow: 0px 10px 10px $main-grey-blue;
+    }
 
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         margin-right: 18px;
-//     }
-// }
+    @media (min-width: 600px) and (max-width: 768px) {
+        box-shadow: 0px 10px 10px $main-grey-blue;
+    }
+}
 
-// .indent-left20 {
-//     margin-left: 20px;
+.author-foto {
+    background-color: #b8a88a;
+}
 
-//     @media (max-width: 600px) {
-//         margin-left: 14px;
-//     }
+.date-review {
+    color: $text-grey;
+}
 
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         margin-left: 18px;
-//     }
-// }
-
-// .indent-bot20 {
-//     margin-bottom: 60px;
-
-//     @media (max-width: 600px) {
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//     }
-
-//     @media (min-width: 768px) and (max-width: 1024px) {
-//     }
-
-//     @media (min-width: 1024px) and (max-width: 1280px) {
-//     }
-// }
-
-
-// Отзывы
-// .review-section {
-//     padding-top: 50px;
-
-//     @media (max-width: 600px) {
-//         padding-top: 30px;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         padding-top: 30px;
-//     }
-
-//     @media (min-width: 768px) and (max-width: 1024px) {
-//         padding-top: 40px;
-//     }
-// }
-
-// .image-review {
-//     display: block;
-//     margin-top: 40px;
-//     border-radius: 60px;
-//     position: absolute;
-
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-
-//     @media (max-width: 600px) {
-//         display: none;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         display: none;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 930px) {
-//         width: 100%;
-//     }
-// }
-
-// .review {
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: end;
-
-//     padding-top: 150px;
-//     padding-bottom: 120px;
-
-//     @media (max-width: 600px) {
-//         align-items: center;
-//         padding-top: 30px;
-//         padding-bottom: 30px;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         align-items: center;
-//         padding-top: 40px;
-//         padding-bottom: 40px;
-//     }
-
-//     @media (min-width: 768px) and (max-width: 900px) {
-//         align-items: center;
-//         padding-top: 110px;
-//         padding-bottom: 80px;
-//     }
-
-//     @media (min-width: 850px) and (max-width: 900px) {
-//         padding-bottom: 100px;
-//     }
-
-//     @media (min-width: 900px) and (max-width: 1024px) {
-//         align-items: center;
-//         padding-top: 120px;
-//         padding-bottom: 120px;
-//     }
-// }
-
-// .review-list {
-//     display: flex;
-//     flex-wrap: nowrap;
-//     overflow: hidden;
-//     width: 600px;
-//     padding-bottom: 20px;
-
-//     left: 0;
-//     transition: all ease 1s;
-
-//     @media (max-width: 600px) {
-//         width: 100%;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         width: 100%;
-//     }
-// }
-
-// .review-item {
-//     padding: 30px;
-//     border-radius: 20px;
-//     // background: $bg-light;
-
-//     @media (max-width: 600px) {
-//         // box-shadow: 0px 10px 10px $main-grey-blue;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         // box-shadow: 0px 10px 10px $main-grey-blue;
-//     }
-// }
-
-// .title-review {
-//     font-weight: 600;
-//     padding-bottom: 20px;
-
-//     @media (max-width: 600px) {
-//         padding-bottom: 15px;
-//     }
-// }
-
-// .description-review {
-//     font-size: 16px;
-//     padding-bottom: 20px;
-
-//     @media (max-width: 600px) {
-//         font-size: 15px;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         font-size: 15px;
-//     }
-// }
-
-// .author-foto {
-//     min-width: 60px;
-//     min-height: 60px;
-//     background-color: #b8a88a;
-//     border-radius: 30px;
-
-//     @media (max-width: 600px) {
-//         min-width: 44px;
-//         min-height: 44px;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         min-width: 50px;
-//         min-height: 50px;
-//     }
-// }
-
-// .author-name {
-//     padding-bottom: 4px;
-// }
-
-// .date-review {
-//     // color: $text-grey;
-//     font-size: 15px;
-// }
-
-// .btn-icon-list {
-//     display: flex;
-//     justify-content: end;
-//     gap: 40px;
-//     padding-top: 40px;
-//     padding-right: 110px;
-
-//     @media (max-width: 600px) {
-//         justify-content: center;
-//         padding-right: 0px;
-//         padding-top: 20px;
-//     }
-
-//     @media (min-width: 600px) and (max-width: 768px) {
-//         justify-content: center;
-//         padding-right: 0px;
-//         padding-top: 20px;
-//     }
-
-//     @media (min-width: 768px) and (max-width: 1024px) {
-//         justify-content: center;
-//         padding-right: 0px;
-//         padding-top: 10px;
-//         margin-top: 10px;
-//     }
-// }
-
-// .next-btn,
-// .prev-btn {
-//     cursor: pointer;
-
-//     @media (min-width: 768px) and (max-width: 1024px) {
-//         background-color: #fff;
-//         padding: 10px;
-//         border-radius: 20px;
-//     }
-// }
+.next-btn,
+.prev-btn {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}

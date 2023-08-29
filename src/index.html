@@ -351,22 +351,22 @@
             </section>
 
             <!-- Отзывы -->
-            <section class="review-section max-w-7xl m-auto">
+            <section class="review-section px-5 lg:px-3 xl:px-0 max-w-7xl m-auto">
                 <h2 class="font-normal not-italic text-left pb-6">Отзывы наших путешественников</h2>
-                <div class="review">
+                <div class="flex relative flex-col items-center lg:items-end">
                     <img
-                        class="image-review position-image-review"
+                        class="image-review block mt-10 absolute inset-x-0"
                         src="/src/images/review-image.png"
                         alt="фото для подложки"
                     />
-                    <div class="left-alignment">
-                        <div id="containerReviews" class="review-list"></div>
+                    <div>
+                        <div id="containerReviews" class="review-list flex flex-nowrap overflow-hidden pb-5"></div>
                     </div>
-                    <div class="btn-icon-list">
-                        <div id="btn-prev" class="prev-btn">
+                    <div class="flex justify-center gap-10 pt-5 pr-0 md:pt-3 md:mt-3 lg:mt-0 lg:pt-10 lg:pr-40 lg:flex-end">
+                        <div id="btn-prev" class="prev-btn cursor-pointer">
                             <img src="/src/icons/left.png" alt="кнопка назад" />
                         </div>
-                        <div id="btn-next" class="next-btn">
+                        <div id="btn-next" class="next-btn cursor-pointer">
                             <img
                                 src="/src/icons/right.png"
                                 alt="кнопка вперед"
@@ -379,5 +379,5 @@
     </body>
 
     <!-- js скрипт -->
-    <!-- <script type="module" src="./script.js"></script> -->
+    <script type="module" src="./js/script.js"></script>
 </html>

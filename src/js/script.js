@@ -62,28 +62,28 @@ const btnNext = document.getElementById('btn-next');
 btnNext.addEventListener('click', goNext);
 
 // Для кнопки рандомный отзыв
-const btnRandom = document.getElementById('review-random');
-btnRandom.addEventListener('click', getRandom);
+// const btnRandom = document.getElementById('review-random');
+// btnRandom.addEventListener('click', getRandom);
 
 function renderReview() {
     const reviewVisible = document.getElementById('containerReviews');
     let review = reviews[currentReviewIndex];
 
     reviewVisible.innerHTML = `
-            <div class="review-item">
-                <p class="title-review">
+            <div class="review-item rounded-2xl p-8 mt-40">
+                <p class="font-semibold pb-4 sm:pb-5">
                     Отзыв о туре “${review.title}”
                 </p>
-                <p class="description-review">
+                <p class="text-base pb-3 md:text-sm">
                     ${review.text}
                 </p>
-                <div class="flex-line cntr-object author-review">
-                    <div class="author-foto indent-right20"></div>
-                    <div class="flex-column">
-                        <p class="author-name">
+                <div class="flex items-center">
+                    <div class="author-foto rounded-full w-11 h-11 mr-2 sm:w-12 sm:h-12 sm:mr-3 md:w-14 md:h-14 md:mr-4"></div>
+                    <div class="flex-col">
+                        <p>
                             ${review.name}
                         </p>
-                        <p class="date-review">
+                        <p class="date-review text-sm">
                             ${review.date}
                         </p>
                     </div>
@@ -113,12 +113,12 @@ function goNext() {
 }
 
 // Идея для рандомного выбора
-function getRandom() {
-    let currentRandomIndex = Math.floor(Math.random() * reviews.length);
-    currentReviewIndex = currentRandomIndex;
+// function getRandom() {
+//     let currentRandomIndex = Math.floor(Math.random() * reviews.length);
+//     currentReviewIndex = currentRandomIndex;
 
-    console.log(currentRandomIndex);
-    renderReview();
-}
+//     console.log(currentRandomIndex);
+//     renderReview();
+// }
 
 renderReview();
