@@ -129,10 +129,10 @@ questions.forEach(question => {
     question.addEventListener('click', () => {
         const btnOpen = question.querySelector('.btnOpen');
         console.log(btnOpen);
-        // btnOpen.addEventListener('click', () => {
-        //     question.classList.replace('none', 'block')
-        //     console.log(question);
-        // })
+        btnOpen.addEventListener('click', () => {
+            question.classList.replace('none', 'block');
+            // console.log(question);
+        })
         // console.log(show-quess);
         
     })
