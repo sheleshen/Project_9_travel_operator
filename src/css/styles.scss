@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
+
 // Переменные
 // MAIN
 $main-sand: #b68155;
@@ -125,6 +129,14 @@ p,
 .text-quess {
     @apply font-normal text-sm text-black md:text-base xl:text-base;
     color: $form-text-lead-in;
+}
+
+.none {
+    display: none;
+};
+
+.block {
+    display: block;
 }
 
 // BTN КНОПКИ
@@ -300,6 +312,14 @@ h2 {
 
 .icon-quess {
     color: $main-sand;
+}
+
+.click-question {
+    transition: transform 0.5s ease-in;
+}
+
+.answer {
+    display: none;
 }
 
 // Отзывы

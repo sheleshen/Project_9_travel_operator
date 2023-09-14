@@ -51,16 +51,16 @@
                     </div>
                     <div class="hidden md:flex md:gap-8 lg:gap-10">
                         <p>
-                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Маршруты</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="#routes">Маршруты</a>
                         </p>
                         <p>
-                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">О нас</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="#about-us">О нас</a>
                         </p>
                         <p>
-                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Отзывы</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="#reviews">Отзывы</a>
                         </p>
                         <p>
-                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Статьи</a>
+                            <a class="font-montserrat no-underline text-sm font-normal text-white" href="#questions">Вопросы</a>
                         </p>
                         <p>
                             <a class="font-montserrat no-underline text-sm font-normal text-white" href="">Контакты</a>
@@ -91,7 +91,7 @@
 
         <main>
             <!-- О нас -->
-            <section class="px-5 lg:px-3 xl:px-0 hidden md:flex img-about md:bg-no-repeat md:bg-cover ">
+            <section id="about-us" class="px-5 lg:px-3 xl:px-0 hidden md:flex img-about md:bg-no-repeat md:bg-cover ">
                 <div class="max-w-7xl m-auto pb-8 sm:pb-9 md:pb-10 lg:pb-14 xl:pb-20">
                     <div class=" md:w-1/2 md:pr-7">
                         <h2>
@@ -124,7 +124,7 @@
             </section>
 
             <!-- Туры -->
-            <section class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto relative">
+            <section id="routes" class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto relative">
                 <div>
                     <h2>
                         Популярные маршруты
@@ -261,88 +261,88 @@
             </section>
             
             <!-- Популярные вопросы -->
-            <section class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto relative">
+            <section id="questions" class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto relative">
                 <h2>
                     Ответы на частые вопросы
                 </h2>
                 <div class="flex flex-col gap-2">
-                    <div class="quess-item py-5 px-6 rounded-2xl">
+                    <div class="question-answer quess-item py-5 px-6 rounded-2xl">
                         <div class="flex justify-between">
-                            <p  class="font-normal text-default">
+                            <p  class="question font-normal text-default">
                                 Про сложность маршрутов
                             </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 icon-quess md:w-6 md:h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnOpen w-5 h-5 icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hidden icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3" />
                             </svg>
                         </div>
-                        <p class="font-normal text-quess pt-5 hidden">
+                        <p class="none font-normal text-quess pt-5">
                             Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки направлений прогрессивного развития. Разнообразный и богатый опыт консультация с широким активом позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения существенных финансовых и административных условий.
                         </p>
                     </div>
-                    <div class="quess-item py-5 px-6 rounded-2xl">
+                    <div class="question-answer quess-item py-5 px-6 rounded-2xl">
                         <div class="flex justify-between">
-                            <p class="font-normal text-default">
+                            <p class="question font-normal text-default">
                                 Можно ли будет искупаться в океане?
                             </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 icon-quess md:w-6 md:h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnOpen w-5 h-5 icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hidden icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3" />
                             </svg>
                         </div>
-                        <p class="font-normal text-quess pt-5 hidden">
+                        <p class="none font-normal text-quess pt-5">
                             Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки направлений прогрессивного развития. Разнообразный и богатый опыт консультация с широким активом позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения существенных финансовых и административных условий.
                         </p>
                     </div>
-                    <div class="quess-item py-5 px-6 rounded-2xl">
+                    <div class="question-answer quess-item py-5 px-6 rounded-2xl">
                         <div class="flex justify-between">
-                            <p class="font-normal text-default">
+                            <p class="question font-normal text-default">
                                 Нужно ли делать страховку?
                             </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 icon-quess md:w-6 md:h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnOpen w-5 h-5 icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hidden icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3" />
                             </svg>
                         </div>
-                        <p class="font-normal text-quess pt-5 hidden">
+                        <p class="none font-normal text-quess pt-5">
                             Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки направлений прогрессивного развития. Разнообразный и богатый опыт консультация с широким активом позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения существенных финансовых и административных условий.
                         </p>
                     </div>
-                    <div class="quess-item py-5 px-6 rounded-2xl">
+                    <div class="question-answer quess-item py-5 px-6 rounded-2xl">
                         <div class="flex justify-between">
-                            <p class="font-normal text-default">
+                            <p class="question font-normal text-default">
                                 Будет ли на маршрутах связь?
                             </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hidden icon-quess md:w-6 md:h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnOpen w-5 h-5 icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 icon-quess md:w-6 md:h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hidden icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3" />
                             </svg>
                         </div>
-                        <p class="font-normal text-quess pt-5">
+                        <p class="none font-normal text-quess pt-5">
                             Связь на Камчатке есть только в городах и поселках. На вулканах и активной части похода связи практически не будет. Исключение - стоянка около Мутновской ГеоТЭС и приют "Авачинский" под одноименным вулканом. В остальном - вне зоны доступа. Но не переживайте, группа будет оснащена спутниковым телефонам, чтобы раз в 3 дня выходить на связь "с материком".
                         </p>
                     </div>
-                    <div class="quess-item py-5 px-6 rounded-2xl">
+                    <div class="question-answer quess-item py-5 px-6 rounded-2xl">
                         <div class="flex justify-between">
-                            <p class="font-normal text-default">
+                            <p class="question font-normal text-default">
                                 Остались вопросы?
                             </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 icon-quess md:w-6 md:h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnOpen w-5 h-5 icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hidden icon-quess md:w-6 md:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3" />
                             </svg>
                         </div>
-                        <p class="font-normal text-quess pt-5 hidden">
+                        <p class="none font-normal text-quess pt-5 ">
                             Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки направлений прогрессивного развития. Разнообразный и богатый опыт консультация с широким активом позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения существенных финансовых и административных условий.
                         </p>
                     </div>
@@ -351,7 +351,7 @@
             </section>
 
             <!-- Отзывы -->
-            <section class="review-section px-5 lg:px-3 xl:px-0 max-w-7xl m-auto">
+            <section id="reviews" class="review-section px-5 lg:px-3 xl:px-0 max-w-7xl m-auto">
                 <h2 class="font-normal not-italic text-left pb-6">Отзывы наших путешественников</h2>
                 <div class="flex relative flex-col items-center lg:items-end">
                     <img

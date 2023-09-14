@@ -61,9 +61,9 @@ btnPrev.addEventListener('click', goPrev);
 const btnNext = document.getElementById('btn-next');
 btnNext.addEventListener('click', goNext);
 
-// Для кнопки рандомный отзыв
-// const btnRandom = document.getElementById('review-random');
-// btnRandom.addEventListener('click', getRandom);
+// // Для кнопки рандомный отзыв
+// // const btnRandom = document.getElementById('review-random');
+// // btnRandom.addEventListener('click', getRandom);
 
 function renderReview() {
     const reviewVisible = document.getElementById('containerReviews');
@@ -122,3 +122,18 @@ function goNext() {
 // }
 
 renderReview();
+
+const questions = document.querySelectorAll('.question-answer');
+
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        const btnOpen = question.querySelector('.btnOpen');
+        console.log(btnOpen);
+        // btnOpen.addEventListener('click', () => {
+        //     question.classList.replace('none', 'block')
+        //     console.log(question);
+        // })
+        // console.log(show-quess);
+        
+    })
+})
