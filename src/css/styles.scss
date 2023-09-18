@@ -42,7 +42,7 @@ $main-contrast-brown5: #9c9d92;
 
 // BG
 $bg-white: #ffffff;
-$bg-light: #F8F4F0;
+$bg-light: #f8f4f0;
 $bg-light2: #f8f4f0;
 $bg-light3: #f2e8e0;
 $bg-light4: #ebddd1;
@@ -117,8 +117,7 @@ h6 {
 }
 
 p,
-.btn
-.btn-sec {
+.btn .btn-sec {
     font-family: 'Nunito', sans-serif;
 }
 
@@ -133,7 +132,7 @@ p,
 
 .none {
     display: none;
-};
+}
 
 .block {
     display: block;
@@ -211,26 +210,26 @@ h1 {
     color: $text-white;
 
     @media (max-width: 200px) {
-            font-size: 24px;
-            text-align: center;
+        font-size: 24px;
+        text-align: center;
     }
-    
+
     @media (min-width: 200px) and (max-width: 320px) {
-            font-size: 30px;
-            text-align: center;
+        font-size: 30px;
+        text-align: center;
     }
-    
+
     @media (min-width: 320px) and (max-width: 600px) {
-            font-size: 40px;
-            text-align: center;
+        font-size: 40px;
+        text-align: center;
     }
-    
+
     @media (min-width: 600px) and (max-width: 768px) {
-            font-size: 60px;
+        font-size: 60px;
     }
-    
+
     @media (min-width: 768px) and (max-width: 1024px) {
-            font-size: 80px;
+        font-size: 80px;
     }
 }
 
@@ -258,7 +257,7 @@ h2 {
     @media (max-width: 600px) {
         display: none;
     }
-        
+
     @media (min-width: 600px) and (max-width: 768px) {
         display: none;
     }
@@ -306,7 +305,7 @@ h2 {
     color: $main-grey;
 }
 
-.tour-color-line{
+.tour-color-line {
     border-color: $main-sand2;
 }
 

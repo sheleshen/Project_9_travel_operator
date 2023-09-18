@@ -1,19 +1,20 @@
 {
-  "name": "travel-company",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "format": "yarn prettier --write ."
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "2.9.3",
-    "buffer": "^5.5.0||^6.0.0",
-    "parcel": "^2.9.3"
-  },
-  "dependencies": {
-    "parcel-reporter-static-files-copy": "^1.5.2",
-    "postcss": "^8.4.28",
-    "sass": "^1.66.1",
-    "tailwindcss": "^3.3.3"
-  }
+    "name": "travel-company",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html",
+        "format": "yarn prettier --write ."
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "2.9.3",
+        "buffer": "^5.5.0||^6.0.0",
+        "parcel": "^2.9.3",
+        "prettier": "3.0.3"
+    },
+    "dependencies": {
+        "parcel-reporter-static-files-copy": "^1.5.2",
+        "postcss": "^8.4.28",
+        "sass": "^1.66.1",
+        "tailwindcss": "^3.3.3"
+    }
 }
