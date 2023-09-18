@@ -3,7 +3,7 @@
         "@parcel/config-default"
     ],
     "transformers": {
-        "*.{jpg,jpeg,png,gif,svg}": [
+        "images/*.{jpg,jpeg,png,gif,svg}": [
             "@parcel/transformer-image"
         ]
     }
