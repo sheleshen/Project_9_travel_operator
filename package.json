@@ -1,5 +1,4 @@
 {
-    
     "name": "travel-company",
     "scripts": {
         "dev": "parcel src/index.html",
