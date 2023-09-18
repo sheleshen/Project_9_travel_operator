@@ -5,6 +5,7 @@
     "transformers": {
         "*.{jpg,jpeg,png,gif,svg}": [
             "@parcel/transformer-image"
-        ]
+        ],
+        "icons/*.svg": ["@parcel/transformer-svg"]
     }
 }
