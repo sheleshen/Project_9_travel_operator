@@ -72,8 +72,8 @@
                         <p>
                             <a
                                 class="font-montserrat no-underline text-sm font-normal text-white"
-                                href="#reviews"
-                                >Отзывы</a
+                                href="#why-us"
+                                >Почему мы</a
                             >
                         </p>
                         <p>
@@ -81,6 +81,20 @@
                                 class="font-montserrat no-underline text-sm font-normal text-white"
                                 href="#faq"
                                 >Вопросы</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                class="font-montserrat no-underline text-sm font-normal text-white"
+                                href="#galery"
+                                >Галерея</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                class="font-montserrat no-underline text-sm font-normal text-white"
+                                href="#reviews"
+                                >Отзывы</a
                             >
                         </p>
                         <p>
@@ -364,6 +378,48 @@
                 />
             </section>
 
+            <!-- Почему с нами -->
+            <section id="why-us" class="relative">
+                <img class="absolute left-0 w-full object-none line-why-us" src="/src/images/line-why-us.png" alt="">
+                <div class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto">
+                    <h2>
+                        Почему с нами?
+                    </h2>
+                    <div class="relative">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 pt-5">
+                            <div class="flex flex-col items-center px-5">
+                                <div class="hidden lg:flex rounded-full bg-main-grey-sand w-3 h-3 mb-10"></div>
+                                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl pb-4 sm:pb-5 md:pb-6">
+                                    Безопасность
+                                </p>
+                                <p class="text-center">
+                                    Мы заботимся о вашей безопасности, наши инструкторы имеют все нужные навыки и оборудование
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center px-1 sm:px-3 md:px-4 lg:px-5">
+                                <div class="hidden lg:flex rounded-full bg-main-grey-sand w-3 h-3 mb-10"></div>
+                                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl pb-4 sm:pb-5 md:pb-6">
+                                    Маршруты
+                                </p>
+                                <p class="text-center">
+                                    Наши маршруты построены так, чтобы максимально погрузить вас в природу Камчатского края
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center px-5">
+                                <div class="hidden lg:flex rounded-full bg-main-grey-sand w-3 h-3 mb-10"></div>
+                                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl pb-4 sm:pb-5 md:pb-6">
+                                    Индивидуальность
+                                </p>
+                                <p class="text-center">
+                                    Мы организуем индивидуальные туры по вашим предпочтениям. Маршруты можно <a class="font-nunito link-text" href="#routes">посмотреть здесь</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+            </section>
+
             <!-- Популярные вопросы -->
             <section
                 id="faq"
@@ -393,6 +449,34 @@
                             Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки направлений прогрессивного развития. Разнообразный и богатый опыт консультация с широким активом позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения существенных финансовых и административных условий.
                         </p>
                     </div> -->
+            </section>
+
+            <!-- Галерея  -->
+            <section id="galery" class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-1 pb-5 md:pb-6 lg:pb-7 xl:pb-8 first-letter: pt-8 sm:pt-9 md:pt-10 lg:pt-14 xl:pt-20">
+                    <h2 class="p-0">
+                        Посмотрите на эту красоту
+                    </h2>
+                    <p class="link-main-sand">
+                        <a class="font-nunito link-text" href="">
+                            Посмотреть ещё   
+                        </a>                 
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 xl:grid-cols-2 pb-4 sm:pb-5 md:pb-7 lg:pb-10">
+                    <div class="flex flex-row">
+                        <img class="object-cover w-1/2 h-auto" src="./images/gallery-1.jpg" alt="Вулканы Камчатки">
+                        <img class="object-cover w-1/2 h-auto" src="./images/gallery-2.jpg" alt="Вулканы Камчатки">
+                    </div>
+                    <img class="object-cover h-full" src="./images/gallery-3.jpg" alt="Вулканы Камчатки">
+                    <img class="object-cover w-full h-auto" src="./images/gallery-4.jpg" alt="Вулканы Камчатки">
+                    <img class="object-cover w-full h-auto" src="./images/gallery-5.jpg" alt="Вулканы Камчатки">
+                </div>
+                <button class="btn btn-primary block m-auto">
+                    <a href="#routes">
+                        Создать свои впечатления
+                    </a>
+                </button>
             </section>
 
             <!-- Отзывы -->
@@ -430,6 +514,42 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Популярные статьи -->
+            <!-- <section class="px-5 lg:px-3 xl:px-0 max-w-7xl m-auto">
+                <h2>
+                    Интересные статьи
+                </h2>
+                <p class="pb-4 md:pb-6 text-default w-full md:w-4/5 lg:w-1/2">
+                    Мы регулярно публикуем статьи в блоге, чтобы вы могли больше узнать о Камчатском крае и правильно подготовиться к походу                
+                </p>
+
+                <div class="grid grid-cols-3 gap-7">
+                    <div class="flex flex-col rounded-xl overflow-hidden">
+                        <div class="p-5">
+                            <p class="pb-2 md:pb-3 link-main-sand">
+                                Наименование новости
+                            </p>
+                            <p class="pb-2">
+                                Как принято считать, базовые сценарии поведения пользователей набирают популярность среди определенных слоев населения.
+                            </p>
+                            <div class="flex flex-row justify-between">
+                                <p class="">
+                                    08.12.2023
+                                </p>
+                                <p class="link-main-sand">
+                                    Читать
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./images/alex-glebov-DatZ9b13R1g-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <p class="pt-6 md:pt-8 lg:pt-10 link-main-sand">
+                    Посмотреть ещё
+                </p>
+            </section> -->
+
         </main>
     </body>
 

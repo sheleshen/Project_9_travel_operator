@@ -36,7 +36,7 @@ function renderFAQ() {
                     ${question.title}
                 </p>
 
-                <button class="button-faq text-default">
+                <button class="button-faq text-default text-main-grey-sand">
                     +
                 </button>
             </div>

@@ -130,6 +130,10 @@ p,
     color: $form-text-lead-in;
 }
 
+.link-text {
+    color: $main-sand;
+}
+
 .none {
     display: none;
 }
@@ -235,13 +239,45 @@ h1 {
 
 h2 {
     color: $text-black;
-    @apply font-normal not-italic text-left pb-6 text-xl pt-8 sm:text-2xl sm:pt-9 md:text-3xl md:pt-10 lg:text-4xl lg:pt-14 xl:text-5xl xl:pt-20;
+    @apply font-normal not-italic text-left pb-6 text-xl pt-8 sm:text-2xl sm:pt-9 md:text-3xl md:pt-10 lg:pb-7 lg:text-4xl lg:pt-20 xl:text-5xl;
 }
 
 // ДРУГИЕ СВОЙСТВА
 
 .font-montserrat {
     font-family: Montserrat;
+}
+
+.font-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-main-grey-sand {
+    background-color: $main-grey-sand;
+}
+
+.text-main-grey-sand {
+    color: $main-grey-sand;
+}
+
+.line-why-us{
+    top: 181px;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+
+    @media (min-width: 600px) and (max-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        top: 174px;
+    }
 }
 
 // СЛАЙЛЕР
