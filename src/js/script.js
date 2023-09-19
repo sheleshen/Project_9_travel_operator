@@ -30,7 +30,7 @@ function renderFAQ() {
 
     questionsArray.forEach((question) => {
         containerFAQ.innerHTML += `
-        <div class="question-answer quess-item py-5 px-6 rounded-2xl">
+        <div class="quess-item py-5 px-6 rounded-2xl">
             <div class="flex justify-between">
                 <p class="question font-normal text-default">
                     ${question.title}
@@ -38,6 +38,9 @@ function renderFAQ() {
 
                 <button class="button-faq text-default text-main-grey-sand">
                     +
+                </button>
+                <button class="none button-faq text-default text-main-grey-sand">
+                    -
                 </button>
             </div>
 
@@ -54,6 +57,9 @@ function renderFAQ() {
         if (clickElementFAQ.classList.contains('button-faq')) {
             const answer = clickElementFAQ.parentElement.nextElementSibling;
             answer.classList.toggle('none');
+
+            const btnOpenFAQ = clickElementFAQ.nextElementSibling;
+            btnOpenFAQ.classList.toggle('none'); // не пропадает обратно плюс
         }
     });
 }
