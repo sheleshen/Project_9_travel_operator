@@ -36,7 +36,7 @@ function renderFAQ() {
                     ${question.title}
                 </p>
 
-                <button class="button-faq text-default text-main-grey-sand">
+                <button class="block button-faq text-default text-main-grey-sand">
                     +
                 </button>
                 <button class="none button-faq text-default text-main-grey-sand">
@@ -58,24 +58,27 @@ function renderFAQ() {
             const answer = clickElementFAQ.parentElement.nextElementSibling;
             answer.classList.toggle('none');
 
-            const btnOpenFAQ = clickElementFAQ.nextElementSibling;
-            btnOpenFAQ.classList.toggle('none'); // не пропадает обратно плюс
+            // const btnOpenFAQ = clickElementFAQ.nextElementSibling;
+            // btnOpenFAQ.classList.toggle('none');
+
+            if (clickElementFAQ.textContent === '-') {
+                clickElementFAQ.textContent = '+';
+            } else {
+                clickElementFAQ.textContent = '-';
+            }
         }
+
+   
     });
 }
 
 // const questions = document.querySelectorAll('.question-answer');
-
 // questions.forEach(question => {
 //     question.addEventListener('click', () => {
 //         const btnOpen = question.querySelector('.btnOpen');
-//         console.log(btnOpen);
 //         btnOpen.addEventListener('click', () => {
 //             question.classList.replace('none', 'block');
-//             // console.log(question);
 //         })
-//         // console.log(show-quess);
-
 //     })
 // })
 
