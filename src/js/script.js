@@ -58,8 +58,8 @@ function renderFAQ() {
             const answer = clickElementFAQ.parentElement.nextElementSibling;
             answer.classList.toggle('none');
 
-            // const btnOpenFAQ = clickElementFAQ.nextElementSibling;
-            // btnOpenFAQ.classList.toggle('none');
+            const btnOpenFAQ = clickElementFAQ.nextElementSibling;
+            btnOpenFAQ.classList.toggle('none');
 
             if (clickElementFAQ.textContent === '-') {
                 clickElementFAQ.textContent = '+';
@@ -71,16 +71,6 @@ function renderFAQ() {
    
     });
 }
-
-// const questions = document.querySelectorAll('.question-answer');
-// questions.forEach(question => {
-//     question.addEventListener('click', () => {
-//         const btnOpen = question.querySelector('.btnOpen');
-//         btnOpen.addEventListener('click', () => {
-//             question.classList.replace('none', 'block');
-//         })
-//     })
-// })
 
 renderFAQ();
 
@@ -148,8 +138,8 @@ const btnNext = document.getElementById('btn-next');
 btnNext.addEventListener('click', goNext);
 
 // // Для кнопки рандомный отзыв
-// const btnRandom = document.getElementById('review-random');
-// btnRandom.addEventListener('click', getRandom);
+const btnRandom = document.getElementById('review-random');
+btnRandom.addEventListener('click', getRandom);
 
 function renderReview() {
     const reviewVisible = document.getElementById('containerReviews');
@@ -199,12 +189,18 @@ function goNext() {
 }
 
 // Кнопка для рандомного выбора
-// function getRandom() {
-//     let currentRandomIndex = Math.floor(Math.random() * reviews.length);
-//     currentReviewIndex = currentRandomIndex;
+function getRandom() {
+    let currentRandomIndex = Math.floor(Math.random() * reviews.length);
 
-//     console.log(currentRandomIndex);
-//     renderReview();
-// }
+    if (currentReviewIndex === currentRandomIndex) {
+        getRandom()
+        return
+    }
+    
+    currentReviewIndex = currentRandomIndex;
+
+    console.log(currentRandomIndex);
+    renderReview();
+}
 
 renderReview();
